@@ -1,0 +1,84 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath2340%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%2332325d'%3e%3c/rect%3e%3ccircle r='38.26' cx='1012.23' cy='199.17' fill='url(%26quot%3b%23SvgjsLinearGradient2341%26quot%3b)'%3e%3c/circle%3e%3ccircle r='42.165' cx='75.81' cy='490.58' fill='%2343468b'%3e%3c/circle%3e%3ccircle r='51.195' cx='1332.47' cy='340.89' fill='url(%26quot%3b%23SvgjsLinearGradient2342%26quot%3b)'%3e%3c/circle%3e%3ccircle r='48.52' cx='1168.63' cy='42.9' fill='%2343468b'%3e%3c/circle%3e%3ccircle r='42.725' cx='882' cy='203.46' fill='%2343468b'%3e%3c/circle%3e%3ccircle r='40.095' cx='764.84' cy='122.9' fill='url(%26quot%3b%23SvgjsLinearGradient2343%26quot%3b)'%3e%3c/circle%3e%3ccircle r='32.38' cx='969.69' cy='187.82' fill='url(%26quot%3b%23SvgjsLinearGradient2344%26quot%3b)'%3e%3c/circle%3e%3ccircle r='45.315' cx='807.23' cy='518.3' fill='url(%26quot%3b%23SvgjsLinearGradient2345%26quot%3b)'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath2340'%3e%3crect width='1440' height='560' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3clinearGradient x1='935.71' y1='199.17' x2='1088.75' y2='199.17' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient2341'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1434.86' y1='340.89' x2='1230.08' y2='340.89' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient2342'%3e%3cstop stop-color='%23e298de' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='rgba(35%2c 101%2c 138%2c 1)' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='845.0300000000001' y1='122.9' x2='684.6500000000001' y2='122.9' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient2343'%3e%3cstop stop-color='%2384b6e0' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='rgba(63%2c 68%2c 159%2c 1)' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1034.45' y1='187.82' x2='904.9300000000001' y2='187.82' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient2344'%3e%3cstop stop-color='%23e298de' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='rgba(35%2c 101%2c 138%2c 1)' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='716.6' y1='518.3' x2='897.86' y2='518.3' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient2345'%3e%3cstop stop-color='%2332325d' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='rgba(40%2c 42%2c 110%2c 1)' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.head{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: rgb(245, 151, 11);
+
+}
+#form{
+    background-color: azure;
+    box-shadow: 5px 5px 10px black;
+    height: 50%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 15px 0;
+    
+}
+table{
+    margin: 10px;
+    width: 90%;
+}
+label{
+    display: block;
+    margin: 10px;
+    width: 90%;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+input{
+    width: 80%;
+    height: 35px;
+    box-shadow: 8px 8px 10px gray;
+    border: none;
+    border-radius: 2px;
+    
+}
+button{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 60%;
+    font-weight: bold;
+    height: 30px;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px grey;
+}
+button:hover{
+    background-color: blue;
+    color: aliceblue;
+}
+footer{
+    background-color: grey;
+    color: aliceblue;
+    height: 30px;
+    padding: 8px 8px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+#nameerror{
+    color: red;
+    display: none;
+    margin: auto;
+    font-size: medium;
+}
+#emailerror{
+    color: red;
+    display: none;
+    margin: auto;
+    font-size: medium
+}

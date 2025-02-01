@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    background-color: #793cdd;
+    padding: 40px;
+    text-align: center;
+}
+h1{
+    color: aliceblue;
+    margin-bottom: 25px;
+}
+.myinput{
+    margin-top: 15px;
+    height: 35px;
+    width: 700px;
+}
+.addbutn{
+    background-color: #cc86ff;
+    right: 0%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100px;
+}
+.addbutn:hover{
+    background-color:#4cfce1;
+}
+ul{
+    margin: 10px;
+    list-style-type: none;
+}
+
+li{
+    background-color: #c4fcf0;
+    padding: 12px 8px 12px 40px ;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px;
+    transition:0.2s;
+
+}
+ul li:nth-child(odd){
+    background-color: #4cfce1;
+}
+ul li:hover{
+    background-color: #f9f871;
+}
+
+ul li.cheked{
+    background-color: #007f62;
+    color: aliceblue;
+    text-decoration: line-through;
+}
+#cheked{
+    background: none;
+    border: none;
+    font-size: large;
+    text-align-last: left ;
+    cursor: pointer;
+    float: right;
+    margin-right: 20px;
+}
+#cheked:hover{
+    background-color: rgb(15, 14, 14);
+    color: white;
+    border-radius: 2px;
+}
+#close{
+    background: none;
+    border: none;
+    font-size: large;
+    text-align-last: left ;
+    cursor: pointer;
+    float: right;
+    margin-right: 20px;
+       
+}
+#close:hover{
+    background-color: rgb(15, 14, 14);
+    color: white;
+    border-radius: 2px;
+
+}

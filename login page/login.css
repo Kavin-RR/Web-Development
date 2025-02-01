@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    height: 100vh;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.continer{
+    background-color: aliceblue;
+    height: 500px;
+    width: 450px;
+    position: relative;
+    border-radius: 10px;
+    padding: 100px;
+    box-sizing: border-box;
+    box-shadow: 10px 20px 5px rgb(103, 102, 102);
+
+}
+.logopic{
+    height: 100px;
+    width: 100px;
+    background: url(".//img/OIP.jpeg");
+    background-size: 100%;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: 14px 10px 5px rgb(214, 212, 212);
+}
+.Sign{
+    color: rgb(28, 138, 222);
+}
+.inputs{
+    text-align: left;
+    margin-top: 20px;
+}
+input,label,button{
+    display: block;
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+}
+label{
+    margin-bottom: 10px;
+    color: rgb(28, 138, 222);
+    margin-top: 5px;
+
+}
+input{
+    background: white;
+    padding: 10px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: 14px 10px 5px rgb(217, 215, 215);
+}
+button{
+    margin-top: 20px;
+    background-color: rgb(28, 138, 222);
+    color: white;
+    height: 50px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 14px 10px 7px rgb(217, 215, 215);
+
+}

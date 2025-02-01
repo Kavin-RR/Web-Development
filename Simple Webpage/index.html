@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Language Translator</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       
+        header{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        nav{
+            background-color: rgb(64, 63, 63);
+            padding: 10px;
+            text-align: center;
+        }
+        nav a{
+            text-decoration: none;
+            color: white;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        nav a:hover{
+            color: rgb(65, 202, 106);
+        }
+        .aboutus{
+            margin-top: 20px;
+            text-align: center;
+            background-color: aquamarine;
+            padding: 10px;
+        }
+        .aboutus p{
+            margin: 10px auto;
+            padding-bottom:12px; 
+            text-align: justify;
+            width: 80%;
+        }
+        .aboutus a{
+            text-decoration: none;
+            color: black;
+            background-color: white;
+            padding: 11px;
+            border-radius: 10px;
+        }
+        .aboutus a:hover{
+            color: white;
+            background-color: black;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>One Page Website</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="sevice.html">Service</a>
+    </nav>
+
+    <div class="aboutus">
+        <h1>About Us</h1>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique neque quo alias reiciendis assumenda excepturi necessitatibus, sit quae! Porro quam alias laborum, molestiae officia blanditiis qui harum adipisci eveniet itaque. Eveniet, aliquid impedit itaque omnis soluta aut. Adipisci aspernatur asperiores cupiditate, aperiam, doloribus odit voluptatem laborum unde odio officiis quod, est nihil itaque natus. Asperiores reprehenderit minus quia? Qui explicabo obcaecati, laborum facere quos ex asperiores magnam magni. Quos, iure.</p>
+        <a href="#">Our Team</a>
+    </div>
+
+    <p id="demo"></p>
+
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en' },
+                'demo' // Corrected to use the ID 'demo'
+            );
+        }
+    </script>
+    
+
+</body>
+</html>

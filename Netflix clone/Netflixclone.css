@@ -1,0 +1,128 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;  
+}
+
+.banner{
+    background-image: url("./bg_image.jpg");
+    background-size: cover;
+    background-position: center center;
+    object-fit: contain;
+    height: 450px;
+}
+
+.banner_conntents{
+    margin-left: 30px;
+    padding-top: 140px;
+    height: 190px;
+}
+.banner_ctn{
+    width: 40rem;
+    line-height: 1.3;
+    padding-bottom:1rem ;
+    font-size: 1rem;
+    max-width: 360px;
+    height: 180px;
+    margin-top: 10px;
+}
+.buttons{
+    color: rgb(251, 245, 245);
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    height: 20px;
+    width: 120px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.buttons:hover{
+    color: black;
+    background-color: aliceblue;
+}
+.banner_fade{
+    margin-top: 145px;
+    height: 7.4rem;
+    background: linear-gradient(180deg,rgba(95, 93, 93, 0.61)),black;
+}
+
+.banner_title{
+    font-size: 50px;
+    padding: 7px;
+    font-weight: bold;
+}
+
+.con{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+.con::-webkit-scrollbar{
+    display: none;
+}
+
+.row{
+    
+    width: 100%;
+    max-height: 100px;
+    object-fit: contain;
+    transition: transform 450ms;
+    padding-left: 10px;       
+}
+
+.row:hover{
+    transform: scale(1.08);
+}
+
+.row1{
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    transition: transform 450ms;
+    padding-left: 20px;
+    display: flex;
+    
+}
+.row1:hover{
+    transform: scale(1.30);
+}
+
+.interface{
+    color: white;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+footer{
+    color: aliceblue;
+    text-align: center;
+    background-color: rgb(58, 57, 57);
+    padding: 10px;
+    margin-top: 10px;
+}
+.nav_logo{
+    width: 80px;
+    object-fit: contain;
+}
+.nav_avatar{
+    width: 30px;
+    object-fit: contain;
+}
+.nav{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 1;
+    
+}
+
+

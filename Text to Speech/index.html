@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Text To Speech</title>
+    <link rel="stylesheet" href="./T_to_T.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Text To Speech</h1>
+
+        <textarea id="txt"></textarea>
+
+        <button onclick="speak()">Text To Speech</button>
+
+    </div>
+
+<script>
+    function speak(){
+
+    var text = document.getElementById("txt").value;
+    var speech = new SpeechSynthesisUtterance(text);
+
+        speech.voice = speechSynthesis.getVoices()[0];
+        speech.pitch = 1;
+        speech.rate = 1;
+        
+        window.speechSynthesis.speak(speech);
+    }
+</script>
+
+</body>
+</html>

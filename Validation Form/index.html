@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+    <div class="head">
+        <h1>Simple Form Validation</h1>
+    </div>
+    <div id="form" >
+        <form id="table">
+
+            <label for="name">Name</label>
+            <table><input id="name" type="Name" placeholder="Enter your Name"></table>
+            <span id="nameerror">Name is Required</span><br>
+
+            <label for="email">E-mail</label>
+            <table><input id="email" type="email" placeholder="Enter your E-mail"></table>
+            <span id="emailerror">Invalid email address</span><br>
+
+            <button onclick="sub()" type="submit">Sign Up</button>
+        </form>
+    </div>
+    <footer>This Was Created By Kavin</footer>
+
+    <script src="./form.js"> </script>
+</body>
+</html>
+
