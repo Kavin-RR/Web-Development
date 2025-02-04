@@ -18,3 +18,4 @@ This is a simple image gallery built using HTML and CSS. The gallery displays a 
    ```bash
    git clone https://github.com/your-username/image-gallery.git
 
+![This is the Image of my Project](c:\Users\kavin\Downloads\image_galary.png)
