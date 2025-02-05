@@ -30,38 +30,7 @@ nav ul li a{
 }
 nav ul li a:hover{
     color: rgb(254, 0, 59);
-}
-.name{
-    padding: 10px;
-    margin-top: 10px;
-    margin-left: 10%;
-}
-.name h1{
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-.name span{
-    color: rgb(246, 6, 6);
-}
-.name p{
-    color: rgba(54, 46, 46, 0.9);
-    font-weight:lighter;
-    font-family: fantasy;
-    padding: 10px;
-    margin-bottom: 20px;
-    line-height: 27px;
-    
-    
-}
-.name a {
-    background-color: black;
-    color: aliceblue;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top:15px;
-    height: auto;
-    font-weight: bold;
+    cursor: pointer;
 }
 .imgs{
     width: 35%;
@@ -76,10 +45,46 @@ nav ul li a:hover{
     height: 100%;
     position: absolute;
     bottom: 0px;
-    left:20% ;
+    left:50% ;
     transform: translate(-50%);
 }
 .imgs:hover{
     bottom: 7px;
 }
 
+.body {
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10%;
+    max-width: 650px;
+}
+.body  h1{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.body  span{
+    color: rgb(246, 6, 6);
+}
+.body  p{
+    color: rgba(54, 46, 46, 0.9);
+    font-weight:lighter;
+    font-family: fantasy;
+    padding: 10px;
+    margin-bottom: 20px;
+    line-height: 27px;
+      
+}
+.body a {
+    background-color: black;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top:15px;
+    height: auto;
+    font-weight: bold;
+}
+
+.active {
+    display: block;
+  }
