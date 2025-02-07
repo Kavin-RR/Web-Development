@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="stylesheet" href="./booksky.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <h1>Booksky</h1>
+    </header>
+
+    <div id="container">
+
+        <div id="bookcon">
+            <h2>Rich dad Poor Dad</h2>
+            <h5>Robert</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, minus, consequuntur ab corporis cumque saepe veniam est omnis voluptatem nobis, praesentium nam maiores molestiae iusto.</p>
+            <button onclick="deletebook(event)" id="delbtn">Delete</button>           
+        </div>
+
+
+    </div>
+
+    <div class="pop_overlay"></div>
+
+    <div class="popup_box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book_title">
+            <input type="text" placeholder="Book Author" id="author_name">
+            <textarea placeholder="Short Description" id="text"></textarea>
+            <button id="add">ADD</button>
+            <button id="cancel">CANCEL</button>
+        </form>
+    </div>
+
+
+    <button id="add_button">+</button>
+
+
+    <script src="./booksky.js"></script>
+
+    <div class="about">
+        <h2>About</h2>
+        <p>This website is created for Demo. I am concentrate in the front-end development.So,I try my coding skills to develope this wesite.</p>
+
+    </div>
+
+    <footer>This is created by Kavin</footer>
+
+</body>
+</html>

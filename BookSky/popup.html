@@ -1,0 +1,72 @@
+<!--<style>
+    .overlay{
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        opacity: 0.8;
+        z-index: 1;
+        display: none;
+    }
+
+    .popup{
+        position: absolute;
+        background-color: aliceblue;
+        color: black;
+        padding: 10px;
+        margin-left: 30%;
+        width: 45%;
+        border-radius: 10px;
+        z-index: 2;
+        display: none;
+    }
+</style>
+
+
+<button onclick="show()">Show</button>
+
+<div class="overlay"></div>
+
+<div class="popup">
+    
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, incidunt, temporibus velit facilis dolore fuga praesentium harum veritatis, quis ipsum earum sapiente nisi. Expedita ratione inventore molestias voluptas autem molestiae.</p>
+    
+    <button onclick="del()">Close</button>
+
+</div>
+
+
+<script>
+
+    var over=document.querySelector(".overlay")
+    var pop = document.querySelector(".popup")
+
+    function show(){
+
+        pop.style.display="block"
+        over.style.display="block"
+    }
+
+    function del(){
+        pop.style.display="none"
+        over.style.display="none"
+    }
+
+
+</script>
+-->
+
+<button id="btn">Show</button>
+
+<script>
+    var buttton = document.querySelector("#btn")
+    buttton.addEventListener("click",function(){
+        alert("Hello")
+    })
+    buttton.addEventListener("mouseover",function(){
+        alert("Mouse over")
+    })
+
+</script>
