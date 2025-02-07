@@ -1,8 +1,9 @@
 *{
     margin: 0%;
     padding: 0%;
-    font-family: sans-serif;
+    font-family:sans-serif ;
 }
+
 
 .head{
     width: 100%;
@@ -31,13 +32,15 @@ nav ul li a{
 nav ul li a:hover{
     color: rgb(254, 0, 59);
     cursor: pointer;
+    
 }
 .imgs{
     width: 35%;
     height: 79%;
     position: absolute;
-    bottom: 0;
+    bottom: 3px;
     right: 10px;
+    z-index: 1000; 
 }
 
 .imgs img{
@@ -56,35 +59,86 @@ nav ul li a:hover{
     padding: 10px;
     margin-top: 10px;
     margin-left: 10%;
-    max-width: 650px;
+    max-width: 670px;
 }
 .body  h1{
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .body  span{
     color: rgb(246, 6, 6);
 }
 .body  p{
-    color: rgba(54, 46, 46, 0.9);
-    font-weight:lighter;
-    font-family: fantasy;
+
+    font-size:large;
+    font-weight:bold;
+    font-family: 'Garamond';
     padding: 10px;
     margin-bottom: 20px;
     line-height: 27px;
       
 }
-.body a {
+#Home a {
     background-color: black;
     color: aliceblue;
     text-decoration: none;
-    padding: 10px;
+    padding: 12px 20px;
     border-radius: 10px;
-    margin-top:15px;
-    height: auto;
+    margin: 5px;
     font-weight: bold;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+#Home a:hover {
+    background-color: aliceblue;
+    color: black;
+    transform: scale(1.1); /* Slight zoom effect */
 }
 
 .active {
     display: block;
   }
+.tabcontents ul{
+    list-style: none;
+}
+.tabcontents li {
+    font-size:large;
+    font-weight:bold;
+    font-family: 'Garamond';
+    list-style: none;
+    padding: 5px;
+}
+
+.connection h3 {
+    margin-top: 15px;
+}
+.connection h4{
+    padding: 5px;
+}
+.connection{
+    margin-top: 30px;
+}
+.connection p{
+    margin: 0;
+}
+
+
+.connection a{
+    background-color: transparent !important;
+    color: black !important;
+    padding: 0 !important;
+    margin-top: 0 !important;
+    font-weight: bold !important;
+    font-family: 'Garamond';
+    font-size: large;
+    line-height: 27px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+
+}
+.connection a:hover {
+    transform: scale(1.1);/
+}
+
