@@ -2,8 +2,8 @@
     margin: 0%;
     padding: 0%;
     font-family:sans-serif ;
-}
 
+}
 
 .head{
     width: 100%;
@@ -23,16 +23,39 @@ nav ul li{
     margin: 8px 15px;
     list-style-type: none;
 }
-nav ul li a{
+nav ul li a {
     text-decoration: none;
-    color: black;
+    color: #E6E6FA;
     font-size: 22px;
     font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease-in-out;
 }
-nav ul li a:hover{
-    color: rgb(254, 0, 59);
+
+nav ul li a:hover, 
+nav ul li a.active {
+    color: #9500ff;
+    transition: color 0.3s ease-in-out;
     cursor: pointer;
-    
+}
+
+/* Active Tab Indicator */
+.nav-indicator {
+    position: absolute;
+    bottom: -5px;
+    height: 3px;
+    background: linear-gradient(90deg, #00c6ff, #6f00ff);
+    transition: all 0.3s ease-in-out;
+    width: 0;
+}
+
+nav ul li a.active ~ .nav-indicator {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    position: relative;
 }
 .imgs{
     width: 35%;
@@ -58,17 +81,24 @@ nav ul li a:hover{
 .body {
     padding: 10px;
     margin-top: 10px;
-    margin-left: 10%;
-    max-width: 670px;
+    margin-left: 8%;
+    max-width: 700px;
+    position: relative;
+    perspective: 1000px;
+    margin-top: 20px;
 }
-.body  h1{
-    margin-top: 10px;
-    margin-bottom: 10px;
+.body h1{
+    color: white; /* Stands out against pink gradient */
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 .body  span{
-    color: rgb(246, 6, 6);
+    background: #e12385;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
 }
-.body  p{
+.body p{
 
     font-size:large;
     font-weight:bold;
@@ -78,7 +108,7 @@ nav ul li a:hover{
     line-height: 27px;
       
 }
-#Home a {
+#Home .cv {
     background-color: black;
     color: aliceblue;
     text-decoration: none;
@@ -92,7 +122,7 @@ nav ul li a:hover{
 
 #Home a:hover {
     background-color: aliceblue;
-    color: black;
+    color:#e12385 ;
     transform: scale(1.1); /* Slight zoom effect */
 }
 
@@ -102,43 +132,14 @@ nav ul li a:hover{
 .tabcontents ul{
     list-style: none;
 }
-.tabcontents li {
-    font-size:large;
-    font-weight:bold;
+.tabcontents h2{
+    color: #00ffb7;
+}
+.tabcontents {
+    font-size: large;
+    font-weight: bold;
     font-family: 'Garamond';
     list-style: none;
     padding: 5px;
+    
 }
-
-.connection h3 {
-    margin-top: 15px;
-}
-.connection h4{
-    padding: 5px;
-}
-.connection{
-    margin-top: 30px;
-}
-.connection p{
-    margin: 0;
-}
-
-
-.connection a{
-    background-color: transparent !important;
-    color: black !important;
-    padding: 0 !important;
-    margin-top: 0 !important;
-    font-weight: bold !important;
-    font-family: 'Garamond';
-    font-size: large;
-    line-height: 27px;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-    display: inline-block;
-
-}
-.connection a:hover {
-    transform: scale(1.1);/
-}
-

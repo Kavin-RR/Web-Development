@@ -10,10 +10,10 @@
 <body>
 
     <div class="head">
-        <nav> 
-            <img src="./img/img2.png" alt="portfolio">
-            <ul>
-                <li><a class="active tablinks" onclick="openTabs(event, 'Home')">Home</a></li>
+        <nav>
+            <h1 class="gradient-text">Portfolio</h1>
+            <ul class="tabs">
+                <li><a class="tablinks active" onclick="openTabs(event, 'Home')">Home</a></li>
                 <li><a class="tablinks" onclick="openTabs(event, 'About Me')">About Me</a></li>
                 <li><a class="tablinks" onclick="openTabs(event, 'My Projects')">My Projects</a></li>
                 <li><a class="tablinks" onclick="openTabs(event, 'My Certificates')">My Certificates</a></li>
@@ -28,18 +28,21 @@
         </div>
 
         <div class="body" >
-            <div id="Home" class="tabcontents" class="active">  
+            <div id="Home" class="tabcontents" class="tabactive" style="display: contents;">  
                 <div>
-                <h1>Hii, I am <span>Kavin R R</span></h1>
+                <h1>Hi, I am <span>Kavin R R</span></h1>
+                <h2 class="typing-text">
+                    I am <span id="changing-text"></span>
+                </h2>
                 <p>I specialize in crafting modern, responsive web applications, building intelligent AI solutions, and analyzing data for impactful insights. With a passion for technology and innovation, I turn ideas into reality through clean code, creative design, and data-driven strategies.</p>
-                <a href="./img/Kavin.pdf">Download CV</a>
-                    <div class="connection">
+                <a class="cv" href="./img/Kavin.pdf">Download CV</a>
+                    <ul class="connection">
                         <h3>💼 Let’s Connect!</h3>
                         <p>I’m open to full-time roles and collaborations.</p>
                         <li><a href="mailto:mail2kavin.ai@gmail.com">📧 Email: mail2kavin.ai@gmail.com</a></li>
                         <li><a href="https://www.linkedin.com/in/kavin023" target="_blank">🔗 LinkedIn: Kavin R R </a></li>
                         <li ><a href="https://github.com/Kavin-RR" target="_blank">🌐 GitHub: Kavin-RR </a></li>
-                    </div>
+                    </ul>
                 </div>
             </div>
             <div id="About Me" class="tabcontents" style="display: none;">
@@ -50,17 +53,17 @@
                         I’m a front-end developer with a keen eye for design and a love for
                 crafting seamless user experiences. With hands-on experience in modern frameworks like React.js and a passion for UI/UX, I build websites that are both visually appealing and highly functional.
                 </p>
-                    <ul>
+                    <ul class="connection" >
                         <li>🔹 Skills: HTML, CSS, JavaScript, React.js, Tailwind CSS</li>
                         <li>🔹 Passionate About: Front-End Development, UI/UX Design, and AI-powered solutions</li>
                         <li>🔹 Projects: Worked on AI-based ultrasonic repellers, smart attendance systems, and a perfume ordering app (Perfumy)</li>
                             
                         <li>✨ Let’s build something amazing together!</li>
                             
-                        <li>📧 Reach out: kavinaids@gmail.com.</li>
+                        <li ><a href="mailto:mail2kavin.ai@gmail.com">📧 Reach out: mail2kavin.ai@gmail.com.</a></li>
                     </ul>
             </div>
-            <div id="My Projects" class="tabcontents" style="display: none;">
+            <div id="My Projects" class="tabcontents" style="display: none;" >
                 <h2>My Projects 🚀</h2>
                 <p>Welcome to my project showcase! Here, you'll find a collection of my work across Artificial Intelligence, Web Development, and Data Analytics. Each project reflects my expertise in solving real-world problems through innovative technology, clean code, and user-centric design.</p>
                 <ul>
@@ -68,7 +71,7 @@
                     <li>🔹 AI Projects</li>
                 </ul>
                 <br>
-                <ul class="project_t">
+                <ul class="connection">
     
                     <h2 >Web Deevelopment Projects</h2>
                     <br>
@@ -89,21 +92,23 @@
 
                     <h2>Artificial Intelligence Projects</h2>
                     <br>
-
+                    
+                    <li><strong>Image Classification</strong> - AI-powered model for accurately identifying and categorizing objects in images.</li>  
+                    <li><strong>Hand Gesture Recognition</strong> - Machine learning system that detects and interprets hand gestures for interactive control.</li>
                     <li><strong>Object Recognition</strong> - AI model that identifies and classifies objects in images or videos using CV</li>
                     <li><strong>Face Recognition </strong> - Facial recognition system that detects and verifies faces. </li>
                     <li><strong>Diabetes Detection</strong> - Machine learning model that predicts diabetes risk based on medical data.</li>
                     <li><strong>HSV Object Detection </strong> - Detects objects using HSV (Hue, Saturation, Value) color space techniques. </li>
                     <li><strong>Face Detection</strong> -  AI model that locates and detects faces in images or real-time video.</li>
                     <li><strong>Object Detection </strong> - Advanced object detection model for recognizing multiple objects in a scene.</li>
-
+                   
 
                     
                 </ul>
             </div>
             <div id="My Certificates" class="tabcontents" style="display: none;">
                 <h2>My Certificates</h2>
-                <ul>
+                <ul class="connection">
                     <li>📜 Full Stack Development – NoviTech </li>
                     <li>📜 Artificial intelligence (AI)  – Novi Tech</li>
                     <li>📜 Data Analytics – Novi Tech</li>
@@ -121,18 +126,16 @@
             <div id="Hire Me" class="tabcontents" style="display: none;">
                 <h2>Hire Me</h2>
                 <p>Let’s Build Something Amazing Together! <br>
-                    Are you looking for a passionate and skilled Front-End Developer with expertise in Artificial Intelligence, Web Development, and Data Analytics? I bring a blend of creativity, technical proficiency, and problem-solving skills to every project I work on.</p><br>
+                    Are you looking for a passionate and skilled Front-End Developer with expertise in Artificial Intelligence, Web Development, and Data Analytics? I bring a blend of creativity, technical proficiency, and problem-solving skills to every project I work on.</p>
 
-                <ul>
+                <ul class="connection">
                     <h2>Why Hire Me?</h2>
-                    <br>
                     <li><strong>✅ Expert in Front-End Development</strong> – Crafting responsive, user-friendly, and visually appealing websites.</li>
                     <li><strong>✅ AI & Data Analytics Skills</strong> – Developing smart solutions using AI and transforming data into insights.</li>
                     <li><strong>✅ Clean & Optimized Code</strong> – Writing efficient, scalable, and maintainable code.</li>
                     <li><strong>✅ Strong Problem-Solving Ability</strong> – Adapting to new challenges and delivering innovative solutions.</li>
                     <li><strong>✅ Committed to Excellence</strong>– Detail-oriented, deadline-driven, and always eager to learn and improve.</li>
                 </ul>
-                    <br>
 
                     <div class="connection">
                         <h3>💼 Let’s Connect!</h3>
