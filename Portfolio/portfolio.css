@@ -118,13 +118,27 @@ nav ul {
     font-weight: bold;
     display: inline-block;
     transition: all 0.3s ease-in-out;
+    
 }
 
 #Home a:hover {
     background-color: aliceblue;
-    color:#e12385 ;
     transform: scale(1.1); /* Slight zoom effect */
 }
+.cv {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #007bff, #6610f2);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+.cv:hover {
+    background: linear-gradient(45deg, #6610f2, #007bff);
+}
+
 
 .active {
     display: block;
@@ -142,4 +156,223 @@ nav ul {
     list-style: none;
     padding: 5px;
     
+    /* Default state (hidden) */
+    opacity: 0;
+    transform: translateY(20px) rotateY(90deg);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    display: none; 
 }
+
+.tabcontents.active {
+    opacity: 1;
+    transform: translateY(0) rotateY(0);
+    display: block;
+}
+
+.body {
+    position: relative;
+    margin-top: 20px 20px;
+    border-radius: 15px;
+    background: #1e1e1e;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+.connection li{
+    font-size:large;
+    font-weight:bold;
+    font-family: 'Garamond';
+    list-style: none;
+    padding: 5px;
+}
+.connection h3 {
+    margin-top: 15px;
+}
+.connection h4{
+    padding: 5px;
+}
+.connection{
+    margin-top: 30px;
+}
+.connection p{
+    margin: 0;
+}
+
+
+.connection a{
+    background-color: transparent !important;
+    color: aliceblue;
+    padding: 0 !important;
+    margin-top: 0 !important;
+    font-weight: bold !important;
+    font-family: 'Garamond';
+    font-size: large;
+    line-height: 27px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+
+}
+.connection a:hover {
+    transform: scale(1.1);
+    color:#e12385 ;
+}
+
+
+.typing-text span{
+    font-size: 24px;
+    font-weight: bold; 
+}
+
+#changing-text span::after {
+    content: "|";
+    animation: blink 0.6s infinite;
+  }
+
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+body {
+
+    background: linear-gradient(-45deg, #2E0854,#00ffb7, #1B0033 );
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    color: white;
+  }
+
+.gradient-text {
+    font-size: 5rem;
+    font-weight: bold;
+    background: linear-gradient(90deg,#3a1c71, #d76d77);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    /* General adjustments */
+    * {
+        box-sizing: border-box;
+    }
+  
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+  
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+      
+    }
+  
+    nav h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+  
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+  
+    nav ul li {
+        margin: 5px 0; 
+    }
+  
+    nav ul li a {
+        font-size: 18px;
+    }
+  
+    .imgs {
+        display: none;
+    }
+  
+    .imgs img {
+      display: none;
+  
+    }
+  
+    .body {
+        margin: 10px;
+        padding: 15px;
+        max-width: 85%; 
+    }
+  
+    .body h1 {
+        font-size: 2rem; 
+    }
+  
+    .body p {
+        font-size: 16px; 
+    }
+  
+    .typing-text span {
+        font-size: 18px; 
+    }
+  
+    .cv {
+        padding: 8px 16px; 
+        font-size: 14px;
+    }
+  
+    .tabcontents {
+        padding: 10px;
+    }
+  
+    .tabcontents h2 {
+        font-size: 1.5rem; 
+    }
+  
+    .tabcontents ul {
+        padding-left: 20px; 
+    }
+  
+    .connection {
+        margin-top: 20px;
+    }
+  
+    .connection h3 {
+        font-size: 1.2rem; /* Smaller heading for mobile */
+    }
+  
+    .connection a {
+        font-size: 16px; /* Smaller font size for mobile */
+    }
+  
+    /* Gradient text */
+    .gradient-text {
+        font-size: 2.5rem; /* Smaller gradient text for mobile */
+    }
+  }
+  
+  /* Smaller devices (e.g., phones) */
+  @media (max-width: 480px) {
+    nav h1 {
+        font-size: 1.5rem; /* Even smaller heading for very small screens */
+    }
+  
+    .body h1 {
+        font-size: 1.8rem; /* Smaller heading for very small screens */
+    }
+  
+    .gradient-text {
+        font-size: 2rem; /* Smaller gradient text for very small screens */
+    }
+  
+    .imgs img {
+        width: 80%; /* Larger image for very small screens */
+    }
+  }
