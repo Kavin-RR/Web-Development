@@ -104,7 +104,6 @@ nav ul {
     font-weight:bold;
     font-family: 'Garamond';
     padding: 10px;
-    margin-bottom: 20px;
     line-height: 27px;
       
 }
@@ -185,6 +184,7 @@ nav ul {
     font-family: 'Garamond';
     list-style: none;
     padding: 5px;
+    margin-bottom: 3px;
 }
 .connection h3 {
     margin-top: 15px;
@@ -197,8 +197,17 @@ nav ul {
 }
 .connection p{
     margin: 0;
-}
 
+}
+hr{
+    border: 0; /* Remove the default border */
+    height: 2px; /* Set the height of the line */
+    background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Gradient color for the line */
+    margin: 20px 0; /* Add margin for spacing (top and bottom) */
+    padding: 0 10px; /* Add padding (left and right) */
+    border-radius: 5px; /* Rounded corners for a modern look */
+
+}
 
 .connection a{
     background-color: transparent !important;
@@ -212,11 +221,14 @@ nav ul {
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     display: inline-block;
+    padding-bottom: 10px;
+ 
 
 }
 .connection a:hover {
     transform: scale(1.1);
     color:#e12385 ;
+    cursor: pointer;
 }
 
 
