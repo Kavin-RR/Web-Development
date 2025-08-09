@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            align-items: center;
+            background-color:darkcyan ;
+        }
+        h1{
+            text-align: center;
+            color: aliceblue;
+            background-color: black;
+            padding: 20px;
+        }
+        form{
+            align-items: center;
+            text-align: center;
+            margin-top: 5%;
+            margin-left: 35%;
+            background-color:aquamarine;
+            width: 400px;
+            height: 350px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+        #n1,#n2,#cal{
+            width: 60%;
+            height: 30px;
+            margin: 20px 0;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 4px;
+            border: 1px solid #ccc;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);            
+        }
+        button{
+            margin-top: 20px ;
+            width: 33%;
+            border: none;
+            cursor: pointer;
+            color: black;
+            background-color: aliceblue;
+            border-radius: 20px;
+            height: 7%;
+            border: 1px solid #ccc;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+        button:hover{
+            color: aliceblue;
+            background-color: black;
+        }
+        h2{
+            padding: 5px;
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <head>
+    <h1>JavaScript Demo</h1>
+    </head>
+    <form>
+        <h2>Calculator</h2>
+        <div>
+            <label for="n1">Number 1 : </label>
+            <input type="text" id="n1" placeholder="        Enter the 1 st number" >
+        </div>
+        <div>
+            <label for="n2">Number 2 : </label>
+            <input type="text" id="n2" placeholder="          Enter the 2 nd number">
+        </div>
+        <div>
+            <label for="cal">Give the Symbol:</label>
+            <input type="text" id="cal" placeholder="        Operation symbol + , - , * , / ." >
+        </div>
+        
+
+        <button type="button"  onclick="submit()">Submit</button>
+    </form>
+    
+    <script>
+        function submit(){
+            let a = Number(document.getElementById("sub").value);
+            let b = Number(document.getElementById("s").value);
+            let symbol = document.getElementById("u").value;
+            
+                if(symbol === ""){
+                    console.log("Enter the symbol ");
+
+                }
+                else if( symbol === "+"){
+                    console.log(a+b);
+                }
+                    
+                else if(symbol === "-"){
+                    console.log(a-b);
+                }
+                else if(symbol === "*"){
+                    console.log(a*b);
+                }
+                else if(symbol === "/"){
+                    console.log(a*b);
+                }
+                else{
+                    console.log("Give operator symbols");
+                       }       
+        }
+  
+    </script>
+</body>
+</html>

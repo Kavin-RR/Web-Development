@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header id="head">
+        <h1>Student Form</h1>
+    </header>
+
+    <nav>
+        <h4 id="info">
+            This form is used to store the data of the students in the database whos study in the <i>ABC Institute of Technology</i>
+        </h4>
+    </nav>
+    <nav id="form">
+        <form >
+            <h3>Students Data</h3>
+            <div id="con">
+                <label for="name">Name :</label>
+                <input type="text" placeholder="    Enter your Name" id="name" >
+            </div>
+            
+            <div id="con">
+                <label for="roll">Roll Number :</label>
+                <input type="text" placeholder="  Enter Your Roll Number" id="roll">
+            </div>
+            <div id="con">
+                <label for="dept">Department :</label>
+                <select name="department" id="dept">
+                    <option value="ECE">Select Here</option>
+                    <option value="AI & DS">AI & DS</option>
+                    <option value="CSE">CSE</option>
+                    <option value="IT">IT</option>
+                    <option value="CS">CS</option>
+                    <option value="EEE">EEE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="MECH">MECH</option>
+
+                </select>
+
+            </div>
+            <div id="con">
+                <label for="mobile">Mobile Number :</label>
+                <input type="text" placeholder="    Enter your Mobile Number" length="10" id="mobile">
+            </div>
+            <div id="con">
+                <label for="email">E-mail ID :</label>
+                <input type="email" placeholder="   Enter your Email" id="email">
+            </div>
+            <div id="con">
+                <label for="radio" >Gender :</label>
+                    <input name="gen" id="gender" type="radio" value="Male">Male
+                    <input name="gen" id="gender" type="radio" value="Female">Female
+            </div>
+            <div id="con">
+                <label for="travel" >Travel Type :</label ><br>
+                <input id="ck" name="tra" value="College Bus" type="checkbox" id="travel">CollegeBus
+                <input id="ck" name="tra" value="Hostel" type="checkbox" id="travel">Hostel
+                <input id="ck" name="tra" value="Days Caller" type="checkbox" id="travel">DaysCaller
+            </div>
+            <div  >
+                <button id="submit" onclick="sub()">Submit</button>
+            </div>
+        </form>
+    </nav>
+    <footer>&copy; 2025 Student Information System | All Rights Reserve</footer>
+    <script src="./script.js"></script>
+</body>
+</html>
